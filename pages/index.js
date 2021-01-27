@@ -34,7 +34,7 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Harry Potter</h1>
+            <h1>Quiz do Harry Potter</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function (infosDoEvento) {
@@ -69,7 +69,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/KarinaRovani" />
+      <GitHubCorner projectUrl={db.others.github} />
     </QuizBackground>
   );
 }
