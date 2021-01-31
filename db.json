@@ -30,12 +30,12 @@
     {
       "image": "static/azkaban.jpg",
       "title": "Aonde Azkaban está localizado?",
-      "answer": 3,
+      "answer": 2,
       "alternatives": [
         "Hogsmeade",
         "Hgwarts",
-        "Caverna de Cristal",
-        "Mar do Norte"
+        "Mar do Norte",
+        "Caverna de Cristal"
       ]
     },
     {

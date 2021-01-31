@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useRouter } from 'next/router';
 import { Lottie } from '@crello/react-lottie';
 // import db from '../../../db.json';
 import Widget from '../../components/Widget';
@@ -13,26 +14,22 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results }) {
+  const router = useRouter();
+  const { name } = router.query;
+  const totalAcertos = results.filter((x) => x).length;
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado:
+        Tela de Resulta1do:
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          Você acertou
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
+          <b>{`${name.trim().toUpperCase()}`}</b>
+          {`${totalAcertos === 0 ? ' que pena, tente outra vez!!' : ' mandou muito bem!!'}`}
+        </p>
+        <p>
+          {totalAcertos === 0 ? 'Você errou todas.' : `Você acertou ${totalAcertos} pergunta(s), parabéns!`}
         </p>
         <ul>
           {results.map((result, index) => (
@@ -47,6 +44,13 @@ function ResultWidget({ results }) {
             </li>
           ))}
         </ul>
+
+        <p>
+          {`Você fez ${(100 * totalAcertos)} pontos.`}
+        </p>
+        <Button type="button" onClick={() => router.push('/')}>
+          Voltar para o ínicio
+					</Button>
       </Widget.Content>
     </Widget>
   );
@@ -191,7 +195,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
     }, 1 * 2000);
-  // nasce === didMount
+    // nasce === didMount
   }, []);
 
   function handleSubmitQuiz() {
