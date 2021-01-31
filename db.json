@@ -6,7 +6,6 @@
     {
       "image": "static/class.jpg",
       "title": "Qual é a aula que tem um professor diferente todos os anos?",
-      "description": "Pergunta fácil em!",
       "answer": 1,
       "alternatives": [
         "Trato de Criaturas Mágicas.",
@@ -18,7 +17,6 @@
     {
       "image": "static/voldemort.jpg",
       "title": "Quantas Horcruxes Voldemort criou?",
-      "description": "E agora? Você sabe?",
       "answer": 2,
       "alternatives": [
         "6",
@@ -33,7 +31,7 @@
       "answer": 2,
       "alternatives": [
         "Hogsmeade",
-        "Hgwarts",
+        "Hogwarts",
         "Mar do Norte",
         "Caverna de Cristal"
       ]
