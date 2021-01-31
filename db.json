@@ -1,45 +1,70 @@
 {
-    "bg": "static/backgroundHP.jpg",
-    "title": "Quiz sobre o Harry Potter",
-    "description": "Teste os seus conhecimentos sobre o mundo do Harry Potter",
-    "questions": [
-      { 
-        "image": "",
-        "title": "",
-        "description": "",
-        "answer": 2,
-        "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
-        ]
-      },
-      {
-        "image": "",
-        "title": "",
-        "description": "",
-        "answer": 0,
-        "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
-        ]
-      }
-    ],
-    "external": [
-      ""
-    ],
-    "theme": {
-      "colors": {
-        "primary": "#20639B",
-        "secondary": "#ED553B",
-        "mainBg": "#173f5f",
-        "contrastText": "#FFFFFF",
-        "wrong": "#E63946",
-        "success": "#3CAEA3"
-      },
-      "borderRadius": "4px"
+  "bg": "static/backgroundHP.jpg",
+  "title": "Quiz sobre o Harry Potter",
+  "description": "Teste os seus conhecimentos sobre o mundo do Harry Potter",
+  "questions": [
+    {
+      "image": "static/class.jpg",
+      "title": "Qual é a aula que tem um professor diferente todos os anos?",
+      "description": "Pergunta fácil em!",
+      "answer": 1,
+      "alternatives": [
+        "Trato de Criaturas Mágicas.",
+        "Defesa contra as Artes das Trevas.",
+        "Poções",
+        "Transfiguração"
+      ]
     },
+    {
+      "image": "static/voldemort.jpg",
+      "title": "Quantas Horcruxes Voldemort criou?",
+      "description": "E agora? Você sabe?",
+      "answer": 2,
+      "alternatives": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "image": "static/azkaban.jpg",
+      "title": "Aonde Azkaban está localizado?",
+      "answer": 3,
+      "alternatives": [
+        "Hogsmeade",
+        "Hgwarts",
+        "Caverna de Cristal",
+        "Mar do Norte"
+      ]
+    },
+    {
+      "image": "static/Snape.gif",
+      "title": "Qual o patrono de Snape?",
+      "answer": 0,
+      "alternatives": [
+        "Corça",
+        "Fenix",
+        "Hipogrifo",
+        "Lobo"
+      ]
+    }
+  ],
+  "external": [
+    "aluraquiz-harrypotter.vercel.app",
+    "aluraquiz-harrypotter-ohhphlqc6.vercel.app"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#20639B",
+      "secondary": "#ED553B",
+      "mainBg": "#173f5f",
+      "contrastText": "#FFFFFF",
+      "wrong": "#E63946",
+      "success": "#3CAEA3"
+    },
+    "borderRadius": "4px"
+  },
     
   "others": {
     "github": "https://github.com/KarinaRovani/aluraquiz-harrypotter"
