@@ -20,7 +20,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resulta1do:
+        Tela de Resultado:
       </Widget.Header>
 
       <Widget.Content>
